@@ -1,0 +1,226 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width:100px;
+    height:52px;
+    margin-right:10px;
+    display: inline-block;
+
+}
+img{
+    width:100%;
+}
+.nav-link,.SignIn{
+    color:black !important;
+    font-size:16px;
+    font-weight:400;
+}
+.nav-link{
+    margin-right:100px;
+}
+.nav-link.last{
+    margin-right:0;
+}
+.navbar{
+    background-color:white;
+    padding:20px 0;
+}
+.navbar-brand span{
+font-size:16px;
+}
+#menu{
+    width: 100%;
+    height: auto;
+    border-bottom:1px solid #e5e5e5;
+}
+.SignIn{
+    padding:20px 45px;
+}
+
+.SignIn:hover{
+    text-decoration: none;
+    color:white !important;
+    background-color:#7379f8;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1)
+}
+#GetStartSection{
+    width:100%;
+    background-color: white;
+    height:auto;
+    color:black;
+
+}
+.secTitle{
+    font-size:50px;
+    margin:20px 0;
+
+}
+.PaddingSec{
+    padding-top:150px;
+    padding-bottom:50px;
+}
+.emailSub{
+    position:relative;
+    width:80%;
+    margin:0 auto;
+
+
+}
+.emailinput{
+    width:100%;
+border:0;
+    border-radius: 40px;
+    box-shadow:1px 1px 1px 1px rgba(0,0,0,.1);
+    margin-top:20px;
+    border:1px solid #fcfcfc;
+    height: 50px;
+}
+.emailinput::placeholder{
+    padding:10px;
+    color:#b2b2b2;
+    font-size:14px;
+    height:50px;
+}
+.StartBtn{
+    height:50px;
+    background-color: #7379f8;
+    color:white !important;
+    border-radius: 40px;
+    position: absolute;
+    padding: 0 20px;
+    line-height: 50px;
+    right: -1px;
+    top: 29%;
+    font-size:14px;
+}
+.SocialIcons{
+    width:100%;
+    text-align: center;
+}
+.StartBtn:hover{
+    background-color: #5b60cc;
+    border:1px solid #7379f8;
+}
+.SocialIcons{
+    margin-top:50px;
+}
+.SocialIcons i{
+color:#cccccc;
+display: inline-block;
+padding:20px;
+font-size:20px;
+}
+#Community{
+    background-color: black;
+    color:white;
+}
+.ReadMoreTest{
+    margin-top:20px;
+    background-color: #7379f8;
+    color:white;
+    display: block;
+    padding:10px;
+    border-radius: 40px;
+    width:50%;
+}
+.TestomonialBox{
+    padding:20px;
+    width:100%;
+    height:auto;
+    border-radius: 5px;
+    background-color: #141414;
+    color:#d0d0d0;
+    margin-top:20px;
+
+}
+.TestTop{
+width:100%;
+margin-bottom:10px;
+}
+.TestPic{
+    width:20%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right:5px;
+}
+.TestName{
+    display:inline-block;
+}
+.TestName h5{ 
+    font-size:1rem;
+}
+.TestPic img{
+    border-radius:50%;
+}
+.twitterIcon{
+    display: inline-block;
+}
+.twitterIcon i{
+    font-size:16px;
+    color:#5a5a5a;
+
+}
+.testDesc{
+    margin-top:30px;
+}
+.testDesc p{
+    font-size:0.75rem;
+}
+.testDate{
+    margin-top:20px;
+}
+.testDate span{
+    font-size:.6rem;
+}
+.FeaturesBox{
+    width:100%;
+    padding:0 30px;
+    margin-top:20px;
+}
+.FeaturesIcon{
+    margin:0 auto;
+    margin-bottom:20px;
+    width:50px;
+    height:50px;
+}
+.FeatureLink{
+    color:#7d0ada;
+    font-size:14px;
+    margin-top:20px;
+}
+.FeatureLink i{
+    font-size:12px;
+}
+.marginRow{
+    margin-top:100px;
+}
+.mobileImg{
+    width:50%;
+    margin:0 auto;
+}
+#Features ul{
+    margin-top:20px;
+}
+.FeatureList{
+    list-style-type: none;
+    margin-top:30px;
+    width:50%;
+    padding:10px;
+}
+.FeatureList i{
+    display: inline-block;
+    color:#b9bcfc;
+    font-size:18px;
+
+}
+.FeatureList h4{
+    display:inline-block;
+    font-size:14px;
+    margin-left:20px;
+
+}
+.FeatureList:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2)
+}
