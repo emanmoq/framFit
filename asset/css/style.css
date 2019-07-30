@@ -26,6 +26,32 @@ img{
     background-color:white;
     padding:20px 0;
 }
+#HeroSection{
+    position: relative;
+}
+.backgrounimg{
+    position: absolute;
+    left:0;
+    top:700px;
+    width:100px;
+}
+.appStore{
+    width:100px;
+    margin-top:100px;
+}
+.appStore span{
+    font-size:10px;
+    color:#cccccc;
+}
+#HeroSection .emailSub{
+    margin-left:0 !important;
+}
+.heroCont{
+    width:80%;
+}
+.heroCont .emailSub{
+    width:100%;
+}
 .navbar-brand span{
 font-size:16px;
 }
