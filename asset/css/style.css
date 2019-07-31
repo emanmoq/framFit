@@ -15,17 +15,62 @@ img{
     color:black !important;
     font-size:16px;
     font-weight:400;
+    padding: 10px 25px !important
 }
+.Sign.SignMobile{
+    display:none;
+}
+
 .nav-link{
-    margin-right:100px;
+    margin-right:50px;
+    text-align: center;
+    position: relative;
 }
 .nav-link.last{
     margin-right:0;
 }
 .navbar{
     background-color:white;
-    padding:20px 0;
+    padding:10px 0;
+    height:70px;
 }
+.scrollNav {
+    top: 0 !important;
+    z-index: 555;
+    animation-duration: 1s;
+    background: rgb(255, 255, 255) !important;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    height:70px;
+}
+.navbar .nav-link:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 3%;
+    right: 21%;
+    border: 1px solid transparent;
+    transition: all .6s;
+}
+
+.navbar .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: 3%;
+    left: 21%;
+    border: 1px solid transparent;
+    transition: all .6s;
+}
+.navbar .nav-link:hover:after, .nav-link:hover:before, .nav-link.activeLink:before {
+    width: 60%;
+    transition: all .6s;
+    border: 1px solid #00bff3;
+}
+
 #HeroSection{
     position: relative;
     z-index: 1;
@@ -68,12 +113,21 @@ font-size:16px;
 }
 #menu{
     width: 100%;
-    height: auto;
     border-bottom:1px solid #e5e5e5;
+    background-color: white;
+    transition: 1s all;
 }
 .SignIn{
-    padding:20px 45px;
+    padding:10px 25px;
 }
+
+
+.nav-link.activeLink:before {
+    width: 55%;
+    transition: all .6s;
+    border: 1px solid #00bff3;
+}
+
 
 .SignIn:hover{
     text-decoration: none;
@@ -155,6 +209,8 @@ font-size:20px;
 #Community{
     background-color: black;
     color:white;
+    overflow: hidden;
+    height: 600px;
 }
 .ReadMoreTest{
     margin-top:20px;
@@ -263,11 +319,309 @@ margin-bottom:10px;
 }
 .FeatureList:hover{
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2)
-}@media(max-width:767px){
+}
+.ModalLogo span{
+color:#7379f8;
+display: block !important;
+text-align: center;
+}
+.ModalLogo,.ClientBuisness{
+    margin:  auto;
+}
+.ModalLogo{
+    margin-bottom:50px;
+}
+.signInModal,.signInSign{
+    top:15%;
+}
+.modal-content{
+    padding:50px !important;
+
+}
+.modal .SignUp,.ModalSign{
+    display: block;
+    margin:50px auto;
+    margin-bottom: 10px
+
+}
+.signInModal .SignIn{
+    margin-top:50px;
+    border:1px solid transparent;
+}
+.ClientSign{
+    margin-right:50px;
+    padding : 10px 33px !important
+
+}
+.signInModal .SignIn:hover{
+background-color: white;
+color:#7379f8 !important;
+border:1px solid #7379f8;
+}
+.signInModal .SignIn {
+    text-decoration: none;
+    color:white !important;
+    background-color:#7379f8;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1)
+}
+.modal-content span{ 
+font-size:12px;
+color:#cecece
+}
+.SignForm .SignIn{
+    background-color: #7379f8;
+    color:white !important;
+    border:1px solid #7379f8;
+    border-radius: 40PX;
+}
+.SignForm .SignIn:hover{
+    background-color: white;
+    color:#7379f8 !important;
+    border:1px solid #7379f8;
+}
+.formLabel{
+    font-size:12px;
+    color:#cecece;
+    margin:0;
+    margin-top:5px;
+}
+.form-Control{
+    border:0;
+    border-bottom:1px solid #cecece;
+    width:100%;
+    margin-top:0;
+    padding:0;
+    height: 10px;
+}
+.form-group{
+    margin:0;
+}
+.form-Control:hover{
+    border-bottom:1px solid #7379f8;
+
+}
+.ClientBuisness{
+    margin:0 !important;
+    padding:0 50px !important;
+}
+.marginColTwo{
+    margin-top:-50px;
+}
+.marginCol{
+    margin-top:-100px;
+}
+section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+#vertical-Nav  nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1 !important;
+    background: #fafbfc !important;
+    float: left;
+    border-right:1px solid #c2c6da;
+    position: fixed;
+    height:100%;
+    top:0;
+    left:0;
+    margin:auto;
+}
+#vertical-Nav .navbar-collapse{
+    padding: 10% 0;
+}
+#vertical-Nav .nav-item,#vertical-Nav .nav-link,#vertical-Nav .navbar-nav,#vertical-Nav .navbar-collapse{
+    display: block !important;
+    color:#c2c6da;
+}
+#vertical-Nav .logo{
+width:50px;
+margin:0 auto;
+display: block;
+}
+#vertical-Nav .navbar-brand{
+    margin: 0 auto !important;
+}
+#vertical-Nav .nav-link{
+    margin:0;
+    color:#c2c6da !important;
+    padding:5px 10px !important;
+
+}
+#vertical-Nav .navbar-toggler{
+    display: none;
+}
+.memberPage .activeLink{
+    border-left:2px solid #7379f8;
+}
+#vertical-Nav .nav-link i{
+    font-size:16px;
+    padding:10px;
+    line-height: 16px;
+
+}
+#vertical-Nav .nav-item{
+    margin-top:20px;
+}
+#vertical-Nav .nav-link:hover i{
+    color:white !important;
+    background-color:#979797;
+    border-radius:50%;
+    text-align: center;
+    
+
+}
+#horizantal-Nav{
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2 !important;
+    border-bottom:1px solid #c2c6da;
+   background-color: #fafbfc;
+   flex-direction: row;
+padding-top:20px;
+padding-bottom:20px;   
+z-index: 1;
+}
+.searhBar i ,.searhBar span{
+    font-size:12px;
+    color:#979797; 
+    margin-right:20px;
+}
+.invite {
+    background-color: white;
+    padding:5px 15px;
+    border:1px solid #7d82f9;
+    border-radius: 40px;
+    display: inline-block;
+}
+.invite:hover{
+    background-color: #7d82f9;
+}
+.invite a{
+color :#7d82f9;
+}
+.invite:hover a{
+    color:white;
+    text-decoration: none;
+    }
+.invite a i{
+    font-size:14px;
+    margin-right:5px;
+}
+.clientImg{
+    width:55px;
+    margin-left:30px;
+    border-radius: 50%;
+    display: inline-block
+}
+.clientImg img{
+    border-radius: 50%;
+}
+#calender{
+    -ms-flex: 4 ;
+    flex: 4 !important;
+height:100%;
+position: fixed;
+right:0;
+top:0;
+    background-color: #fdfdff;
+    border-left:1px solid #c2c6da;
+    z-index:-1;
+    padding:150px 50px;
+}
+.thisday{
+width:100%;
+}
+.thisday i{
+    background-color:#ffd012;
+    color:white;
+    border-radius: 5px;
+    font-size:30px;
+    padding:15px;
+    margin-right:10px;
+}
+.CalenderText{
+    display: inline-block;
+}
+.CalenderText span{
+    display:block;
+    font-size:14px;
+    color:#989898;
+    margin-top:10px;
+}
+.CalenderText h3{
+    font-size:21px;
+    margin:0;
+}
+#Calender{
+    width:100%;
+}
+@media(max-width:767px){
     .backgrounimg,.backgrounimg2{
         display:none;
+
     }
     .secTitle{
         font-size:27px;
     }
+    .navbar .nav-link:before ,.navbar .nav-link:after  {
+    display:none;
+    }
+    .logo{
+        width:70px;
+    }
+    .navbar-brand{
+        line-height: 45px !important
+    }
+    .navbar{
+        height:65px;
+    }
+    .heroCont{
+        margin:20px 0;
+    }
+    .appStore {
+        margin: auto;
+        margin-top: 50px;
+
+    }
+    .navbar-collapse {
+        background-color: white;
+        width: 100%;
+        z-index: 555;
+    }
+    .Sign{
+        display:none;
+    }    
+    .Sign.SignMobile{
+        display:block;
+    }
+    .FeatureList,.ReadMoreTest,.emailSub{
+        width:100%;
+    }
+    .scrollNav{
+        height:100px;
+    }
+    .PaddingSec{
+        padding:50px 10px;
+    }
+    .signInModal .SignIn{
+        display: block;
+    }
+    .ClientSign{
+        margin:0;
+    }
+    .ClientBuisness{
+        padding:0 !important;
+    }
+    .marginColTwo,.marginCol{
+        margin-top:0;
+    }
+    #Community{
+        height:auto;
+    }
+    .nav-link{
+        margin-right:0 !important;
+    }
+
 }

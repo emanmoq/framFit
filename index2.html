@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Frame Fit</title>
+    <meta charset="utf-8">
+    <link rel=icon href="asset/img/logo.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="calender/css/iCalendar.css" type="text/css">
+
+    <link rel="stylesheet" href="asset/css/style.css" type="text/css">
+    
+</head>
+<!---------------------------------------------------------------------------------------------->
+<!--Nabvbar-->
+<section id="vertical-Nav" class="clearfix">
+    <nav class="text-center memberPage">
+        <a class="navbar-brand" href="#">
+            <div class="logo"><img src="asset/img/logo.png" alt=""></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link activeLink" href="#"> <i class="lni-home"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#GetStartSection"><i class="lni-users"></i></a>
+                    </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"><i class="lni-camera"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Community"><i class="lni-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#GetStartSection"><i class="lni-user"></i></a>
+                </li>
+              
+            </ul>
+        </div>
+
+    </nav>
+
+</section>
+<header id="horizantal-Nav">
+<div class="container clearfix">
+        <div class="searhBar float-left">
+                <i class="lni-search"></i>
+                <span>Find a Brand ,Type ..</span>
+        </div>
+        <div class="float-right">
+            <div class="invite"><a href="##"> <i class="far fa-paper-plane"></i> Invite </a></div>
+            <div class="clientImg">
+                <a href="##"><img src="asset/img/1.png" alt=""></a>
+                
+            </div>
+        </div>
+         
+</div>
+    
+</header>
+<section id="calender" class="">
+    <div class="thisday">
+            <i class="lni-calendar"></i>
+            <div class="CalenderText">
+                <h3>Calender </h3>
+                <span>02 March</span>
+            </div>
+    </div>
+    <div id="Calender">
+
+        </div>
+   
+</section>
+<!--Nabvbar-->
+
+
+<body>
+
+<script>
+document.addEventListener('iCalendarDateSelected', function(event) {
+       
+          console.log(iCal.selectedDate);
+        
+        });
+        </script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/owl.carousel.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="calender/js/iCalendar.js"></script>
+
+    <script src="asset/js/main.js"></script>
+    
+</body>
